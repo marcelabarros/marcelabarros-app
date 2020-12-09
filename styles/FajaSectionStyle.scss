@@ -1,0 +1,87 @@
+#faja-section {
+  position: relative;
+  .section-container {
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .image-container {
+      img {
+        height: 50vh;
+        margin-right: 2rem;
+      }
+    }
+    #confort {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      z-index: -1;
+    }
+    #durabilidad {
+      position: absolute;
+      bottom: 0;
+      right: 5%;
+      z-index: -1;
+    }
+  }
+}
+$breakpoint-1400: 1400px;
+@media (max-width: $breakpoint-1400) {
+  #faja-section {
+    .section-container {
+      width: 70%;
+    }
+  }
+}
+$breakpoint-1024: 1024px;
+@media (max-width: $breakpoint-1024) {
+  #faja-section {
+    .section-container {
+      width: 90%;
+    }
+  }
+}
+
+// $breakpoint-860: 860px;
+// @media (max-width: $breakpoint-860) {
+//   #faja-section {
+//     padding: 2rem 0rem;
+//     .section-container {
+//       flex-direction: column-reverse;
+//       .image-container {
+//         width: 100%;
+//         img {
+//           width: 100%;
+//           object-fit: cover;
+//         }
+//       }
+//     }
+//   }
+// }
+$breakpoint-860: 860px;
+@media (max-width: $breakpoint-860) {
+  #faja-section {
+    padding: unset;
+    .section-container {
+      width: 100%;
+      flex-direction: column-reverse;
+      .image-container {
+        display: flex;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    #confort,
+    #durabilidad {
+      display: none;
+    }
+  }
+  .card-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+$primary: #ce382c;
+$secundary: #626262;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+body.active,
+html.active {
+  overflow: hidden;
+}
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: $secundary;
+}
+h1 {
+  font-size: 1.3rem;
+  color: $secundary;
+  font-family: "Oswald";
+}
+h2 {
+  font-size: 2rem;
+  color: $primary;
+  font-family: "Oswald";
+}
+h3 {
+  font-size: 1.8rem;
+  color: $secundary;
+  font-family: "Oswald";
+}
+h4,
+button {
+  font-size: 1rem;
+  color: $secundary;
+  font-family: "Oswald";
+}
+
+p,
+a,
+li,
+label {
+  font-size: 1rem;
+  font-family: "Poppins";
+}

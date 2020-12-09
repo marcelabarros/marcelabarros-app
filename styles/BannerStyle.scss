@@ -1,0 +1,60 @@
+$primary: #ce382c;
+$secundary: #626262;
+#banner {
+  padding: 2rem 0rem;
+  width: 100%;
+  background-color: $primary;
+  .banner-container {
+    width: 50%;
+    min-height: 30vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .person-data {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      img {
+        margin-right: 2rem;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      h3 {
+        font-family: "Poppins";
+        color: white;
+        font-weight: 400;
+      }
+      h4 {
+        font-family: "Poppins";
+        color: white;
+        font-weight: 300;
+      }
+    }
+    .comment {
+      p {
+        font-family: "Poppins";
+        color: white;
+        font-style: italic;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+$breakpoint-860: 860px;
+@media (max-width: $breakpoint-860) {
+  #banner {
+    .banner-container {
+      width: 90%;
+    }
+  }
+}

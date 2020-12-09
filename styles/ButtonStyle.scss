@@ -1,0 +1,19 @@
+$primary: #ce382c;
+$secundary: #626262;
+
+.button-component {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+$breakpoint-860: 860px;
+@media (max-width: $breakpoint-860) {
+  .button-component {
+    padding: 0.5rem 1rem;
+  }
+}
