@@ -87,6 +87,12 @@ function MyApp({ Component, pageProps }) {
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous"
           />
+          <title>Marcela Barros IFBB pro</title>
+          <meta
+            name="description"
+            content="Web personal de Marcela Barros, atleta profesional 2020."
+          />
+          <meta name="robots" content="index, follow" />
         </Head>
         <NavBar />
         <Component {...pageProps} dataRaise={dataRaise} selection={selection} />

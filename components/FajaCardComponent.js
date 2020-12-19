@@ -113,6 +113,7 @@ export default function FajaCard(props) {
       <a href="https://api.whatsapp.com/send/?phone=5493814661789&text=Hola%21+Necesito+informaci%C3%B3n+sobre+talles+especiales.&app_absent=0">
         Consultar talles especiales.
       </a>
+      <a href="/envios">Información sobre envíos.</a>
       <Link href="/confirmacion">
         <button
           onClick={
